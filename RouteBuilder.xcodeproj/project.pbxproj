@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C2F8F018EA8E9D001D56DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8EF18EA8E9D001D56DE /* Foundation.framework */; };
+		46C2F8F618EA8E9D001D56DE /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8F518EA8E9D001D56DE /* Cedar.framework */; };
+		46C2F8F818EA8E9D001D56DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C2F8F718EA8E9D001D56DE /* main.m */; };
+		6B87660B1364CC6A1C2A4277 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46C2F8EC18EA8E9D001D56DE /* RouteBuilder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RouteBuilder; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C2F8EF18EA8E9D001D56DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46C2F8F218EA8E9D001D56DE /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		46C2F8F418EA8E9D001D56DE /* RouteBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteBuilder-Prefix.pch"; sourceTree = "<group>"; };
+		46C2F8F518EA8E9D001D56DE /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = RouteBuilder/Frameworks/Cedar.framework; sourceTree = "<group>"; };
+		46C2F8F718EA8E9D001D56DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C2F8EA18EA8E9D001D56DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C2F8F618EA8E9D001D56DE /* Cedar.framework in Frameworks */,
+				46C2F8F018EA8E9D001D56DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46C2F8E318EA8E9D001D56DE = {
+			isa = PBXGroup;
+			children = (
+				46C2F8F118EA8E9D001D56DE /* RouteBuilder */,
+				46C2F8EE18EA8E9D001D56DE /* Frameworks */,
+				46C2F8ED18EA8E9D001D56DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46C2F8ED18EA8E9D001D56DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C2F8EC18EA8E9D001D56DE /* RouteBuilder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C2F8EE18EA8E9D001D56DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46C2F8F518EA8E9D001D56DE /* Cedar.framework */,
+				46C2F8EF18EA8E9D001D56DE /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46C2F8F118EA8E9D001D56DE /* RouteBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				46C2F8F218EA8E9D001D56DE /* Rakefile */,
+				46C2F8F318EA8E9D001D56DE /* SupportingFiles */,
+				6B87655723328A8B89ED594D /* Sources */,
+				6B87692A07CE20BD82D2F4B5 /* Specs */,
+			);
+			path = RouteBuilder;
+			sourceTree = "<group>";
+		};
+		46C2F8F318EA8E9D001D56DE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				46C2F8F718EA8E9D001D56DE /* main.m */,
+				46C2F8F418EA8E9D001D56DE /* RouteBuilder-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6B87655723328A8B89ED594D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6B87692A07CE20BD82D2F4B5 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C2F8EB18EA8E9D001D56DE /* RouteBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C2F8FD18EA8E9D001D56DE /* Build configuration list for PBXNativeTarget "RouteBuilder" */;
+			buildPhases = (
+				46C2F8E818EA8E9D001D56DE /* ShellScript */,
+				46C2F8E918EA8E9D001D56DE /* Sources */,
+				46C2F8EA18EA8E9D001D56DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RouteBuilder;
+			productName = RouteBuilder;
+			productReference = 46C2F8EC18EA8E9D001D56DE /* RouteBuilder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C2F8E418EA8E9D001D56DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Railsware;
+			};
+			buildConfigurationList = 46C2F8E718EA8E9D001D56DE /* Build configuration list for PBXProject "RouteBuilder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 46C2F8E318EA8E9D001D56DE;
+			productRefGroup = 46C2F8ED18EA8E9D001D56DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46C2F8EB18EA8E9D001D56DE /* RouteBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46C2F8E818EA8E9D001D56DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"${TARGET_NAME}\"/Frameworks/Cedar.framework \"${BUILT_PRODUCTS_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C2F8E918EA8E9D001D56DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C2F8F818EA8E9D001D56DE /* main.m in Sources */,
+				6B87660B1364CC6A1C2A4277 /* ExampleSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		46C2F8FB18EA8E9D001D56DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		46C2F8FC18EA8E9D001D56DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		46C2F8FE18EA8E9D001D56DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RouteBuilder/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RouteBuilder/SupportingFiles/RouteBuilder-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46C2F8FF18EA8E9D001D56DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RouteBuilder/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RouteBuilder/SupportingFiles/RouteBuilder-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C2F8E718EA8E9D001D56DE /* Build configuration list for PBXProject "RouteBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C2F8FB18EA8E9D001D56DE /* Debug */,
+				46C2F8FC18EA8E9D001D56DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C2F8FD18EA8E9D001D56DE /* Build configuration list for PBXNativeTarget "RouteBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C2F8FE18EA8E9D001D56DE /* Debug */,
+				46C2F8FF18EA8E9D001D56DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46C2F8E418EA8E9D001D56DE /* Project object */;
+}
