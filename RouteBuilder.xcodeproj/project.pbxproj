@@ -10,9 +10,10 @@
 		46C2F8F018EA8E9D001D56DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8EF18EA8E9D001D56DE /* Foundation.framework */; };
 		46C2F8F618EA8E9D001D56DE /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8F518EA8E9D001D56DE /* Cedar.framework */; };
 		46C2F8F818EA8E9D001D56DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C2F8F718EA8E9D001D56DE /* main.m */; };
-		6B87660B1364CC6A1C2A4277 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */; };
 		6B87674EA006CE54C66762E9 /* RBRouteBuilderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */; };
 		6B876ADB9C4FED04E9455773 /* RBRouteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876BB6443DF6472F58267A /* RBRouteBuilder.m */; };
+		6B876C5F7A4B6280DD1CC7F6 /* SpecificBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */; };
+		6B876DA6A632E9F1BBE090EC /* SpecificBuilderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C45E0D2DD782E510F8A /* SpecificBuilderSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,15 @@
 		46C2F8F418EA8E9D001D56DE /* RouteBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteBuilder-Prefix.pch"; sourceTree = "<group>"; };
 		46C2F8F518EA8E9D001D56DE /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = RouteBuilder/Frameworks/Cedar.framework; sourceTree = "<group>"; };
 		46C2F8F718EA8E9D001D56DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B87618577B5F395B3E292E8 /* SpecificBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificBuilder.h; sourceTree = "<group>"; };
 		6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRouteBuilder.h; sourceTree = "<group>"; };
 		6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RBRouteBuilderSpec.mm; sourceTree = "<group>"; };
+		6B8768CC30DBA587DA30E830 /* SpecificRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificRoutes.h; sourceTree = "<group>"; };
 		6B8768F3E9824A925678E3EB /* RBPublicDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPublicDefinitions.h; sourceTree = "<group>"; };
 		6B87692E7642B856C75383B7 /* RBRouteBuilderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRouteBuilderProtocol.h; sourceTree = "<group>"; };
+		6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificBuilder.m; sourceTree = "<group>"; };
 		6B876BB6443DF6472F58267A /* RBRouteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBRouteBuilder.m; sourceTree = "<group>"; };
-		6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		6B876C45E0D2DD782E510F8A /* SpecificBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpecificBuilderSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +104,22 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		6B87667C0AAAF6662B0685E3 /* SpecificBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */,
+				6B87618577B5F395B3E292E8 /* SpecificBuilder.h */,
+				6B8768CC30DBA587DA30E830 /* SpecificRoutes.h */,
+			);
+			path = SpecificBuilder;
+			sourceTree = "<group>";
+		};
 		6B87692A07CE20BD82D2F4B5 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */,
 				6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */,
+				6B87667C0AAAF6662B0685E3 /* SpecificBuilder */,
+				6B876C45E0D2DD782E510F8A /* SpecificBuilderSpec.mm */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -177,9 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46C2F8F818EA8E9D001D56DE /* main.m in Sources */,
-				6B87660B1364CC6A1C2A4277 /* ExampleSpec.mm in Sources */,
 				6B876ADB9C4FED04E9455773 /* RBRouteBuilder.m in Sources */,
 				6B87674EA006CE54C66762E9 /* RBRouteBuilderSpec.mm in Sources */,
+				6B876C5F7A4B6280DD1CC7F6 /* SpecificBuilder.m in Sources */,
+				6B876DA6A632E9F1BBE090EC /* SpecificBuilderSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

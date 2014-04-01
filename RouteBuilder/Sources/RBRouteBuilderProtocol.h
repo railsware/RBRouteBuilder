@@ -5,6 +5,8 @@
 
 #import "RBPublicDefinitions.h"
 
+@class RBRouteBuilder;
+
 @protocol RBRouteBuilderProtocol
     <NSObject>
 
@@ -13,7 +15,7 @@
 
 - (instancetype)root;
 
-- (BuildWithName)add;
-- (BuildWithResourceID)rid;
+- (instancetype(^)(NSString *))add;
+- (id<RBRouteBuilderProtocol>(^)(NSNumber *))rid;
 
 @end

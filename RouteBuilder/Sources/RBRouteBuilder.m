@@ -3,7 +3,15 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
+#import <objc/runtime.h>
 #import "RBRouteBuilder.h"
+
+static id<RBRouteBuilderProtocol> dynamicRouteResolver(id<RBRouteBuilderProtocol> self, SEL _cmd)
+{
+    NSString *component = NSStringFromSelector(_cmd);
+    self.add(component);
+    return self;
+}
 
 @implementation RBRouteBuilder
 {
@@ -52,6 +60,14 @@
         [_backingPath appendFormat:@"/%@", resourceID];
         return self;
     };
+}
+
+#pragma mark - Dynamic method resolution
+
++ (BOOL)resolveInstanceMethod:(SEL)sel
+{
+    BOOL canResolve = class_addMethod([self class], sel, (IMP)dynamicRouteResolver, "@@:");
+    return canResolve;
 }
 
 @end
