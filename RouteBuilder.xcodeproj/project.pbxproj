@@ -11,6 +11,8 @@
 		46C2F8F618EA8E9D001D56DE /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C2F8F518EA8E9D001D56DE /* Cedar.framework */; };
 		46C2F8F818EA8E9D001D56DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C2F8F718EA8E9D001D56DE /* main.m */; };
 		6B87660B1364CC6A1C2A4277 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */; };
+		6B87674EA006CE54C66762E9 /* RBRouteBuilderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */; };
+		6B876ADB9C4FED04E9455773 /* RBRouteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876BB6443DF6472F58267A /* RBRouteBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		46C2F8F418EA8E9D001D56DE /* RouteBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteBuilder-Prefix.pch"; sourceTree = "<group>"; };
 		46C2F8F518EA8E9D001D56DE /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = RouteBuilder/Frameworks/Cedar.framework; sourceTree = "<group>"; };
 		46C2F8F718EA8E9D001D56DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRouteBuilder.h; sourceTree = "<group>"; };
+		6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RBRouteBuilderSpec.mm; sourceTree = "<group>"; };
+		6B876BB6443DF6472F58267A /* RBRouteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBRouteBuilder.m; sourceTree = "<group>"; };
 		6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +90,8 @@
 		6B87655723328A8B89ED594D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6B876BB6443DF6472F58267A /* RBRouteBuilder.m */,
+				6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				6B876F9BEF419F61B10C9B36 /* ExampleSpec.mm */,
+				6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -166,6 +174,8 @@
 			files = (
 				46C2F8F818EA8E9D001D56DE /* main.m in Sources */,
 				6B87660B1364CC6A1C2A4277 /* ExampleSpec.mm in Sources */,
+				6B876ADB9C4FED04E9455773 /* RBRouteBuilder.m in Sources */,
+				6B87674EA006CE54C66762E9 /* RBRouteBuilderSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
