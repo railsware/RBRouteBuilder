@@ -22,4 +22,36 @@
     return self;
 }
 
+- (NSString *)path
+{
+    return [NSString stringWithString:_backingPath];
+}
+
+- (NSURL *)URL
+{
+    return [NSURL URLWithString:self.path];
+}
+
+- (instancetype)root
+{
+    _backingPath = [NSMutableString stringWithString:_rootPath];
+    return self;
+}
+
+- (BuildWithName)add
+{
+    return ^id <RBRouteBuilderProtocol>(NSString *routeName) {
+        [_backingPath appendFormat:@"/%@", routeName];
+        return self;
+    };
+}
+
+- (BuildWithResourceID)rid
+{
+    return ^id <RBRouteBuilderProtocol>(NSNumber *resourceID) {
+        [_backingPath appendFormat:@"/%@", resourceID];
+        return self;
+    };
+}
+
 @end

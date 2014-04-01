@@ -29,18 +29,37 @@ describe(@"RBRouteBuilder", ^{
     });
 
     describe(@"should concatenate", ^{
-        NSString *appendix = @"hello";
-        NSString *fullPath = [NSString stringWithFormat:@"%@/%@", rootPath, appendix];
 
-        it(@"path", ^{
-            sut.and(appendix).path should equal(fullPath);
+        context(@"string", ^{
+            NSString *appendix = @"hello";
+            NSString *fullPath = [NSString stringWithFormat:@"%@/%@", rootPath, appendix];
+
+            it(@"path", ^{
+                sut.root.add(appendix).path should equal(fullPath);
+            });
+
+            it(@"URL", ^{
+                sut.root.add(appendix).URL should equal([NSURL URLWithString:fullPath]);
+            });
+
         });
 
-        it(@"URL", ^{
-            sut.and(appendix).URL should equal([NSURL URLWithString:fullPath]);
+        context(@"resource ID", ^{
+            NSNumber *resourceID = @(42);
+            NSString *fullPath = [NSString stringWithFormat:@"%@/%@", rootPath, resourceID];
+
+            it(@"path", ^{
+                sut.root.rid(resourceID).path should equal(fullPath);
+            });
+
+            it(@"URL", ^{
+                sut.root.rid(resourceID).URL should equal([NSURL URLWithString:fullPath]);
+            });
+
         });
 
     });
+
 });
 
 SPEC_END
