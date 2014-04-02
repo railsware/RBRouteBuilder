@@ -27,11 +27,10 @@
 		6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRouteBuilder.h; sourceTree = "<group>"; };
 		6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RBRouteBuilderSpec.mm; sourceTree = "<group>"; };
 		6B8768CC30DBA587DA30E830 /* SpecificRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificRoutes.h; sourceTree = "<group>"; };
-		6B8768F3E9824A925678E3EB /* RBPublicDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBPublicDefinitions.h; sourceTree = "<group>"; };
-		6B87692E7642B856C75383B7 /* RBRouteBuilderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRouteBuilderProtocol.h; sourceTree = "<group>"; };
 		6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificBuilder.m; sourceTree = "<group>"; };
 		6B876BB6443DF6472F58267A /* RBRouteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBRouteBuilder.m; sourceTree = "<group>"; };
 		6B876C45E0D2DD782E510F8A /* SpecificBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpecificBuilderSpec.mm; sourceTree = "<group>"; };
+		6B876F8EF9C418DCF3034873 /* RBRouteBuilder+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RBRouteBuilder+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +97,7 @@
 			children = (
 				6B876BB6443DF6472F58267A /* RBRouteBuilder.m */,
 				6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */,
-				6B8768F3E9824A925678E3EB /* RBPublicDefinitions.h */,
-				6B87692E7642B856C75383B7 /* RBRouteBuilderProtocol.h */,
+				6B876F8EF9C418DCF3034873 /* RBRouteBuilder+Private.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";

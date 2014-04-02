@@ -4,9 +4,9 @@
 //
 
 #import <objc/runtime.h>
-#import "RBRouteBuilder.h"
+#import "RBRouteBuilder+Private.h"
 
-static id<RBRouteBuilderProtocol> dynamicRouteResolver(id<RBRouteBuilderProtocol> self, SEL _cmd)
+static id dynamicRouteResolver(RBRouteBuilder *self, SEL _cmd)
 {
     NSString *component = NSStringFromSelector(_cmd);
     self.add(component);
@@ -46,18 +46,18 @@ static id<RBRouteBuilderProtocol> dynamicRouteResolver(id<RBRouteBuilderProtocol
     return self;
 }
 
-- (BuildWithName)add
+- (RBRouteBuilder *(^)(NSString *))add
 {
-    return ^id <RBRouteBuilderProtocol>(NSString *routeName) {
+    return ^id(NSString *routeName) {
         [_backingPath appendFormat:@"/%@", routeName];
         return self;
     };
 }
 
-- (BuildWithResourceID)rid
+- (RBRouteBuilder *(^)(NSNumber *))rid
 {
-    return ^id <RBRouteBuilderProtocol>(NSNumber *resourceID) {
-        [_backingPath appendFormat:@"/%@", resourceID];
+    return ^id(NSNumber *resourceID) {
+        self.add(resourceID.stringValue);
         return self;
     };
 }

@@ -1,4 +1,5 @@
 #import "RBRouteBuilder.h"
+#import "RBRouteBuilder+Private.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
