@@ -10,7 +10,7 @@ Pod::Spec.new do |podspec|
   podspec.source = { :git => 'https://github.com/railsware/RBRouteBuilder.git', :tag => "#{podspec.version}" }
   podspec.requires_arc = true
 
-  podspec.source_files = 'RBRouteBuilder/Sources/*.{h,m}'
+  podspec.source_files = 'RouteBuilder/Sources/*.{h,m}'
   podspec.public_header_files = 'RBRouteBuilder/RouteBuilder.h'
 end
 
