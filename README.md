@@ -99,7 +99,7 @@ This methods also might be defined in the protocol if necessary. They use blocks
 
 Xcode template provided by `RBRouteBuilder` can be used to avoid all these routines.
 
-![RBRouteBuilder Xcode template](https://github.com/raislware/RBRouteBuilder/blob/master/Templates/template.png?raw=true).
+![RBRouteBuilder Xcode template](https://raw.githubusercontent.com/railsware/RBRouteBuilder/master/Templates/template.png).
 
 #### Example
 
