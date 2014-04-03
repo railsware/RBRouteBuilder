@@ -12,6 +12,8 @@ might be used
 NSString *path = router().users.withID(userID).projects.path;
 ```
 
+[More real example](https://github.com/railsware/RBRouteBuilder/blob/master/README.md#example)
+
 ### Installation
 
 ```
