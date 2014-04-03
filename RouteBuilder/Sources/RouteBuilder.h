@@ -5,12 +5,8 @@
 
 #ifdef __cplusplus
 #define rb_extern               extern "C"
-#define rb_route_builder_begin  extern "C" {
-#define rb_route_builder_end    }
 #else
 #define rb_extern
-#define rb_route_builder_begin /* Npthing */
-#define rb_route_builder_end   /* Nothing */
 #endif
 
 rb_extern id rb_route_builder(NSString *rootPath);
