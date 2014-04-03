@@ -99,6 +99,48 @@ Xcode template provided by `RBRouteBuilder` can be used to avoid all these routi
 
 ![RBRouteBuilder Xcode template](https://github.com/raislware/RBRouteBuilder/blob/master/Templates/template.png?raw=true).
 
+#### Example
+
+Here is how it might look for dealing with GitHub API routes
+
+```objectivec
+// GHRouter.h
+#import <RBRouteBuilder/RouteBuilder.h>
+
+@protocol GHRouter
+    <NSObject>
+
+@optional
+
+- (instancetype)root;
+- (NSString *)path;
+- (NSURL *)URL;
+
+- (id<GHRouter>(^)(NSString *))add;
+- (id<GHRouter>(^)(NSNumbre *))withID;
+
+// User-defined routes
+
+- (instancetype)users;
+- (instancetype)orgs;
+
+@end
+
+static id<GHRouter> router()
+{
+    return rb_route_builder(@"https://api.github.com");
+}
+
+// ...
+// ...
+// ...
+
+NSURL *orgsURL = router().users.add(@"AlexDenisov").orgs.URL;
+// NSURL: /users/AlexDenisov/orgs
+NSString *fullOrgPath = router().root.orgs.add(@"Railsware").path;
+// NSString: https://api.github.com/orgs/Railsware
+```
+
 ### License
 
 This project distributed under the MIT license.
