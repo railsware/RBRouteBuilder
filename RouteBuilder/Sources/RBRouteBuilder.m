@@ -4,7 +4,9 @@
 //
 
 #import <objc/runtime.h>
-#import "RBRouteBuilder+Private.h"
+#import "RBRouteBuilder.h"
+
+@class RBRouteBuilder;
 
 static id dynamicRouteResolver(RBRouteBuilder *self, SEL _cmd)
 {
@@ -71,3 +73,9 @@ static id dynamicRouteResolver(RBRouteBuilder *self, SEL _cmd)
 }
 
 @end
+
+id rb_route_builder(NSString *rootPath)
+{
+    return [[RBRouteBuilder alloc] initWithRootPath:rootPath];
+}
+

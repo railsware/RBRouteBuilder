@@ -12,7 +12,6 @@
 		46C2F8F818EA8E9D001D56DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C2F8F718EA8E9D001D56DE /* main.m */; };
 		6B87674EA006CE54C66762E9 /* RBRouteBuilderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */; };
 		6B876ADB9C4FED04E9455773 /* RBRouteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B876BB6443DF6472F58267A /* RBRouteBuilder.m */; };
-		6B876C5F7A4B6280DD1CC7F6 /* SpecificBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */; };
 		6B876DA6A632E9F1BBE090EC /* SpecificBuilderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B876C45E0D2DD782E510F8A /* SpecificBuilderSpec.mm */; };
 /* End PBXBuildFile section */
 
@@ -23,14 +22,12 @@
 		46C2F8F418EA8E9D001D56DE /* RouteBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RouteBuilder-Prefix.pch"; sourceTree = "<group>"; };
 		46C2F8F518EA8E9D001D56DE /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = RouteBuilder/Frameworks/Cedar.framework; sourceTree = "<group>"; };
 		46C2F8F718EA8E9D001D56DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6B87618577B5F395B3E292E8 /* SpecificBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificBuilder.h; sourceTree = "<group>"; };
+		6B876385E1116A9BA3026174 /* RouteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteBuilder.h; sourceTree = "<group>"; };
 		6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBRouteBuilder.h; sourceTree = "<group>"; };
 		6B87675ED9FA1D2B5D1F6FBC /* RBRouteBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RBRouteBuilderSpec.mm; sourceTree = "<group>"; };
 		6B8768CC30DBA587DA30E830 /* SpecificRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecificRoutes.h; sourceTree = "<group>"; };
-		6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecificBuilder.m; sourceTree = "<group>"; };
 		6B876BB6443DF6472F58267A /* RBRouteBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBRouteBuilder.m; sourceTree = "<group>"; };
 		6B876C45E0D2DD782E510F8A /* SpecificBuilderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpecificBuilderSpec.mm; sourceTree = "<group>"; };
-		6B876F8EF9C418DCF3034873 /* RBRouteBuilder+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RBRouteBuilder+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +94,7 @@
 			children = (
 				6B876BB6443DF6472F58267A /* RBRouteBuilder.m */,
 				6B8764C1099817F6B9FEDEBD /* RBRouteBuilder.h */,
-				6B876F8EF9C418DCF3034873 /* RBRouteBuilder+Private.h */,
+				6B876385E1116A9BA3026174 /* RouteBuilder.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -105,8 +102,6 @@
 		6B87667C0AAAF6662B0685E3 /* SpecificBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				6B8769AAAE2C221D738C5AD7 /* SpecificBuilder.m */,
-				6B87618577B5F395B3E292E8 /* SpecificBuilder.h */,
 				6B8768CC30DBA587DA30E830 /* SpecificRoutes.h */,
 			);
 			path = SpecificBuilder;
@@ -192,7 +187,6 @@
 				46C2F8F818EA8E9D001D56DE /* main.m in Sources */,
 				6B876ADB9C4FED04E9455773 /* RBRouteBuilder.m in Sources */,
 				6B87674EA006CE54C66762E9 /* RBRouteBuilderSpec.mm in Sources */,
-				6B876C5F7A4B6280DD1CC7F6 /* SpecificBuilder.m in Sources */,
 				6B876DA6A632E9F1BBE090EC /* SpecificBuilderSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

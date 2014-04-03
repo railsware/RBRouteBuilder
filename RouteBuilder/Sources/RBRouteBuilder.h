@@ -6,5 +6,12 @@
 @interface RBRouteBuilder : NSObject
 
 - (instancetype)initWithRootPath:(NSString *)rootPath;
+- (instancetype)root;
+
+- (RBRouteBuilder *(^)(NSString *))add;
+- (RBRouteBuilder *(^)(NSNumber *))withID;
+
+- (NSString *)path;
+- (NSURL *)URL;
 
 @end

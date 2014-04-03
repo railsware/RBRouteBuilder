@@ -3,6 +3,8 @@
 // Copyright (c) 2014 Railsware. All rights reserved.
 //
 
+#import "RouteBuilder.h"
+
 @protocol SpecificRoutes;
 
 typedef id<SpecificRoutes> (^RouteWithName)(NSString *name);
@@ -27,3 +29,8 @@ typedef id<SpecificRoutes> (^RouteWithID)(NSNumber *resourceID);
 - (instancetype)users;
 
 @end
+
+static id<SpecificRoutes> router()
+{
+    return rb_route_builder(@"http://railsware.com");
+}
