@@ -54,7 +54,7 @@ static id dynamicRouteResolver(RBRouteBuilder *self, SEL _cmd)
     };
 }
 
-- (RBRouteBuilder *(^)(NSNumber *))rid
+- (RBRouteBuilder *(^)(NSNumber *))withID
 {
     return ^id(NSNumber *resourceID) {
         self.add(resourceID.stringValue);

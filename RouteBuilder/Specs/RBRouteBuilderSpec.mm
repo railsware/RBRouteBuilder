@@ -50,11 +50,11 @@ describe(@"RBRouteBuilder", ^{
             NSString *fullPath = [NSString stringWithFormat:@"%@/%@", rootPath, resourceID];
 
             it(@"path", ^{
-                sut.root.rid(resourceID).path should equal(fullPath);
+                sut.root.withID(resourceID).path should equal(fullPath);
             });
 
             it(@"URL", ^{
-                sut.root.rid(resourceID).URL should equal([NSURL URLWithString:fullPath]);
+                sut.root.withID(resourceID).URL should equal([NSURL URLWithString:fullPath]);
             });
 
         });

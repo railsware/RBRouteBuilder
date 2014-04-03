@@ -20,7 +20,7 @@ typedef id<SpecificRoutes> (^RouteWithID)(NSNumber *resourceID);
 - (NSURL *)URL;
 
 - (RouteWithName)add;
-- (RouteWithID)rid;
+- (RouteWithID)withID;
 
 // User-defined routes
 

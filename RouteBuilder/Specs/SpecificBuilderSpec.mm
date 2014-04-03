@@ -24,12 +24,12 @@ describe(@"SpecificBuilder", ^{
 
         it(@"path", ^{
             sut.root.users.path should equal(finalPath);
-            sut.root.rid(resourceID).users.path should equal(finalPathWithResourceID);
+            sut.root.withID(resourceID).users.path should equal(finalPathWithResourceID);
         });
 
         it(@"URL", ^{
             sut.root.users.URL should equal([NSURL URLWithString:finalPath]);
-            sut.root.rid(resourceID).users.URL should equal([NSURL URLWithString:finalPathWithResourceID]);
+            sut.root.withID(resourceID).users.URL should equal([NSURL URLWithString:finalPathWithResourceID]);
         });
 
     });

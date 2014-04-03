@@ -13,7 +13,7 @@
 - (instancetype)root;
 
 - (RBRouteBuilder *(^)(NSString *))add;
-- (RBRouteBuilder *(^)(NSNumber *))rid;
+- (RBRouteBuilder *(^)(NSNumber *))withID;
 
 - (NSString *)path;
 - (NSURL *)URL;
