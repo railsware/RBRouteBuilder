@@ -8,24 +8,17 @@
 
 #import <RBRouteBuilder/RouteBuilder.h>
 
-@protocol ___FILEBASENAMEASIDENTIFIER___;
-
-typedef id<___FILEBASENAMEASIDENTIFIER___> (^RouteWithName)(NSString *name);
-typedef id<___FILEBASENAMEASIDENTIFIER___> (^RouteWithID)(NSNumber *resourceID);
-
 @protocol ___FILEBASENAMEASIDENTIFIER___
     <NSObject>
 
 @optional
 
-// Do not modify these definitions
-
 - (instancetype)root;
 - (NSString *)path;
 - (NSURL *)URL;
 
-- (RouteWithName)add;
-- (RouteWithID)withID;
+- (id<___FILEBASENAMEASIDENTIFIER___>(^)(NSString *))add;
+- (id<___FILEBASENAMEASIDENTIFIER___>(^)(NSNumbre *))withID;
 
 // User-defined routes
 
