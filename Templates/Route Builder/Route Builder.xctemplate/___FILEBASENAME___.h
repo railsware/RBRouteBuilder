@@ -18,7 +18,7 @@
 - (NSURL *)URL;
 
 - (id<___FILEBASENAMEASIDENTIFIER___>(^)(NSString *))add;
-- (id<___FILEBASENAMEASIDENTIFIER___>(^)(NSNumbre *))withID;
+- (id<___FILEBASENAMEASIDENTIFIER___>(^)(NSNumber *))withID;
 
 // User-defined routes
 
