@@ -119,7 +119,7 @@ Here is how it might look for dealing with GitHub API routes
 - (NSURL *)URL;
 
 - (id<GHRouter>(^)(NSString *))add;
-- (id<GHRouter>(^)(NSNumbre *))withID;
+- (id<GHRouter>(^)(NSNumber *))withID;
 
 // User-defined routes
 
